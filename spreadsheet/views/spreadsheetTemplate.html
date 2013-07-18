@@ -1,3 +1,25 @@
+<script>
+
+var blue_allele_regex = (/([A-Z0-9]+\*\d+:\d+:\d+)(.+)/);
+var red_allele_regex = /(\*\d\d$)/;
+
+    function applyColour(event){
+                var text = event.target.value;
+                if (red_allele_regex.test(text)){
+                    event.target.className = "red";
+                }
+                else if (blue_allele_regex.test(text)){
+                    event.target.className = "blue";
+                }
+                else if (text.length >= 0){
+                    event.target.className = "green";
+                }
+    };
+    
+    
+</script>
+
+
 <div ng-controller='spreadsheetController'> 
 
 <br /><br /><input type="button" value="Submit" />
