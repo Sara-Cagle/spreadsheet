@@ -195,7 +195,7 @@ spreadsheetApp.controller('spreadsheetController',
 );
 
 
-var xmlhttp = new XMLHttpRequest();
+/*var xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function(){
     if(xmlhttp.readystate === 4 && xmlhttp.status === 200){
@@ -208,4 +208,4 @@ xmlhttp.onreadystatechange = function(){
 
 xmlhttp.open("GET", "#", true);
 
-xmlhttp.send();
+xmlhttp.send();*/
