@@ -5,10 +5,10 @@ App written by Sara Cagle and Lucas Simon.
 ---
 
 Users will upload a CSV file into the browser. This file will contain user patient that includes the Subject_ID, Dx, race, and loci. Other information may be included, but these pieces of data must be in this order.
-For example:
-Subject_ID, Dx, Age of Onset, Race, DBQ1 1, etc
-is okay, but
-Subject_ID, race, Dx, DBQ1, etc
+For example:\n
+Subject_ID, Dx, Age of Onset, Race, DBQ1 1, etc\n
+is okay, but\n
+Subject_ID, race, Dx, DBQ1, etc\n
 is disallowed.
 
 An example CSV file is included for testing purposes and to examine the formating.
