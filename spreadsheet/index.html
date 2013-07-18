@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="spreadsheetApp">
+	<head>
+		<title>Hello, world!</title>
+	</head>
+	<body>
+	
+		<ng-view></ng-view>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="js/app.js"></script>
+        <script src="js/controllers/spreadsheetController.js"></script>
+		<script src="js/directives/fileDirective.js"></script>
+	</body>
+	
+	
+	<style>
+    body{
+      font-family: sans-serif;
+    }
+    input{
+      font-size: 10pt;
+      position: absolute;
+      height: 1.2em;
+      height: 14pt;
+      overflow: hidden;
+      padding-left: 4pt;
+      border: none;
+      width: 80px;
+
+    }
+        
+    table{
+      border-collapse: collapse;
+    }
+    td > div {
+
+      height:16pt;
+	width:2px;
+    }
+    td {border: 1px solid #0EE;
+	width:85px;
+
+    }
+    .column-label >td, .row-label{
+      text-align:center;
+      background: #EEE;
+    }
+    .row-label {
+      width: 2em;
+    }
+    input.red{
+    	background-color: #ff9c9c;
+    }
+    input.blue{
+    	background-color: #a5cfff;
+    }
+    input.green{
+    	background-color: #d8ffce;
+    }
+    
+  </style>
+</html>

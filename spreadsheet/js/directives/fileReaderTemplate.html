@@ -1,0 +1,11 @@
+<input type='file' onchange='angular.element(this).scope().upload(this)'>
+
+<div ng-controller='spreadsheetController'> 
+<center><table>
+<tr class='column-label'><td ng-repeat='column in columns'>{{column}}</td></tr>
+<tr ng-repeat='value in values'><td class='row-label' ng-repeat='data in value'>
+<div><input type='text' id='inputValue'  ng-model='data.content' 
+class='{{data.color}}' ng-change='change(this.value)' colorize='colorize'></div>
+</td></tr>
+</table></center></div>
+
